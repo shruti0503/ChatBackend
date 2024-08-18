@@ -3,6 +3,8 @@ import { createUser, getUserByEmail, getUserUsername, updateUserById } from '../
 import { authentication, random } from '../helpers';
 import { DOMAIN, SESSION_TOKEN } from '../constants';
 
+
+
 export const register = async (req: express.Request, res: express.Response) => {
     try {
         const { username, email, password } = req.body;
